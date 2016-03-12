@@ -1,0 +1,41 @@
+body {
+	font-family: Montserrat, Arial, sans-serif
+}
+div {
+	text-align: center;
+}
+.logo {
+	padding-top: 25px;
+	width: 20%;
+}
+.menu {
+	padding-top: 10px;
+	width: 40%;
+}
+.fixedbutton {
+	position: fixed;
+	bottom: 15px;
+	left: 15px
+}
+a:visited {
+    color: #d32f2f;
+}
+a:hover {
+    text-decoration: underline;
+}	
+a {
+	text-decoration: none;
+}
+@media (max-width: 1280px) {
+	.logo {
+		width: 40%;
+	}
+	.menu {
+		width: 80%;
+	}
+}
+@media (max-width: 600px) {
+	.logo {
+		width: 60%;
+	}
+}
