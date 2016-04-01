@@ -16,10 +16,11 @@ div {
 	font-size: 12px;
 }
 .fb-like {
-  vertical-align: top !important;
+  	vertical-align: top !important;
 }
 .ig-b- { 
 	display: inline-block;
+	vertical-align: top !important;
 }
 .ig-b- img { 
 	visibility: hidden;
