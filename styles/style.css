@@ -12,10 +12,8 @@ div {
 	padding-top: 10px;
 	width: 40%;
 }
-.fixedbutton {
-	position: fixed;
-	bottom: 15px;
-	left: 15px
+.small {
+	font-size: 12px;
 }
 a:visited {
     color: #d32f2f;
