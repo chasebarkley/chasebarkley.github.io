@@ -4,6 +4,38 @@ body {
 div {
 	text-align: center;
 }
+/*social buttons*/
+.soc {
+	display: table;
+	margin: 0 auto;
+}
+.soc ul {
+	width: 10px;
+	padding: 10px;
+	list-style: none;
+	display: inline;
+}
+.soc ul li {
+	display: inline;
+	padding: 3px;
+}
+.soc {
+	-o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.soc #fb:hover, #tw:hover, #go:hover, #ig:hover {
+	z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*end of social buttons*/
 .logo {
 	padding-top: 25px;
 	width: 20%;
@@ -14,32 +46,6 @@ div {
 }
 .small {
 	font-size: 12px;
-}
-.fb-like {
-  	vertical-align: top !important;
-}
-.ig-b- { 
-	display: inline-block;
-	vertical-align: top !important;
-}
-.ig-b- img { 
-	visibility: hidden;
-}
-.ig-b-:hover { 
-	background-position: 0 -60px;
-}
-.ig-b-:active { 
-	background-position: 0 -120px;
-}
-.ig-b-16 {
-	width: 16px;
-	height: 16px;
-	background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-16 { 
-	background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png);
-	background-size: 60px 178px;
 }
 a:visited {
     color: #d32f2f;
