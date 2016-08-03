@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Legghorn's Menu</title>
+		<title>Legghorn's – Wings • Tenders • Burgers</title>
 		<meta charset="utf-8" />
-		<meta name="description" content="Legghorn's of Guntersville is your choice for the areas best menu of Burgers, Wings, BBQ, Catfish, Fried Green Tomatoes, and more."/>
-		<meta name="keywords" content="legghorn, leghorn, menu, burger, chicken, bbq, wings, guntersville"/>
-		<link rel="stylesheet" href=styles/style.css type="text/css" />
+		<meta name="description" content="Legghorn's is your choice for the areas best menu of Burgers, Wings, BBQ, Catfish, Fried Green Tomatoes, and more."/>
+		<meta name="keywords" content="legghorn, leghorn, menu, burger, chicken, bbq, wings"/>
+		<meta property="og:image" content="http://www.legghorns.com/img/LogoFBPreviewWeb.png">
+		<meta property="og:description" content="Burgers, Wings, BBQ, Catfish, Fried Green Tomatoes, and more!"/>
+		<style>
+			.soc {
+				display: table;
+				margin: 0 auto;
+			}
+			.soc ul {
+				width: 10px;
+				padding: 10px;
+				list-style: none;
+				display: inline;
+			}
+			.soc ul li {
+				display: inline;
+				padding: 3px;
+			}
+			.soc {
+				-o-transition:.1s;
+			    -ms-transition:.1s;
+			    -moz-transition:.1s;
+			    -webkit-transition:.1s;
+			    transition:.1s;
+			    -webkit-transition-property: transform;
+			    transition-property: transform;
+			    -webkit-transform: translateZ(0);
+			    transform: translateZ(0);
+			}
+			.soc #fb:hover, #tw:hover, #go:hover, #ig:hover {
+				z-index: 2;
+			    -webkit-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
+
+			body { text-align: center; padding: 150px; }
+  			h1 { font-size: 50px; }
+ 			body { font: 20px Helvetica, sans-serif; color: #333; }
+ 			article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+ 			a { color: #dc8100; text-decoration: none; }
+ 			a:hover { color: #333; text-decoration: none; }
+		</style>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -17,13 +57,29 @@
 				
   				ga('create', 'UA-73129146-1', 'auto');
   				ga('send', 'pageview');
-			</script>
+			</script>	
 	</head>
-	<body class="body">
-		<div id="menu">
-			<img class="menu" src="img/LegghornsMenuFront.png" alt="Legghorn's Menu Front" title="FrontMenu">
-			<img class="menu" src="img/LegghornsMenuBack.png" alt="Legghorn's Menu Back" title="BackMenu">
-			<!-- <a  class="fixedbutton" href="http://www.legghorns.com/"><img src="img/home.png" alt="Home" title="Home"></a> -->
-		</div>
+	<body>
+		<div>
+			<article>
+    <h1>We&rsquo;ll be back soon!</h1>
+    <div>
+        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance in order to prepare for our Albertville, AL location. If you need to you can always contact us at <a href="mailto:contact@legghorns.com">contact@legghorns.com</a>, otherwise we&rsquo;ll be back online shortly!</p>
+        <p>&mdash; Legghorn's</p>
+    </div>
+</article>
+			
+				<div class="soc">
+					<ul>
+    					<li><a href="https://www.facebook.com/Legghorns/"><img src="img/social/facebook.png" id="fb" title="facebook.com/Legghorns"/></a></li>
+    					<li><a href="https://twitter.com/LegghornsCafe"><img src="img/social/twitter.png" id="tw" title="twitter.com/LegghornsCafe"/></a></li>
+    					<li><a href="https://www.google.com/+LegghornsNet"><img src="img/social/google.png" id="go" title="google.com/+LegghornsNet"/></a></li>
+    					<li><a href="https://www.instagram.com/legghorns/"><img src="img/social/instagram.png" id="ig" title="instagram.com/Legghorns"/></a></li>
+					</ul>
+				</div>
+
+			<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+			
 	</body>
 </html>
