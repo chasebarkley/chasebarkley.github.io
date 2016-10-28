@@ -47,6 +47,9 @@ div {
 .small {
 	font-size: 12px;
 }
+ul li {
+	list-style: none;
+}
 a:visited {
     color: #d32f2f;
 }
