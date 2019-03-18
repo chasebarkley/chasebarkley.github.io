@@ -4,13 +4,6 @@ body {
 div {
 	text-align: center;
 }
-#bold {
-    font-weight: bold;
-}
-#boldita {
-    font-weight: bold;
-    font-style: italic;
-}
 /*social buttons*/
 .soc {
 	display: table;
@@ -76,16 +69,33 @@ a {
 	background-color: #f6d91e;
 	text-decoration: none;
 }
-@media (max-width: 1280px) {
-	.logo {
-		width: 30%;
+
+.googleCalendar{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40%;
 }
-@media (max-width: 600px) {
-	.logo {
-		width: 60%;
-	}
-	.menu-button {
-		border: none;
-		padding: 8px 90px;
-	}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+
+@media (max-width: 2500px) {
+    .googleCalendar {
+        width: 80%;
+        left: 10%;
+    }
+}
+@media (max-width: 1400px) {
+    .googleCalendar {
+        width: 100%;
+        padding-bottom: 100%;
+        left: 0%;
+    }
 }
