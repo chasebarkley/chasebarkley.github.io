@@ -102,6 +102,22 @@ if (x.style.display === "none") {
     x.style.display = "none";
 }
 }
+function dessertFunction() {
+var x = document.getElementById("desserts");
+if (x.style.display === "none") {
+    x.style.display = "block";
+} else {
+    x.style.display = "none";
+}
+}
+function familyFunction() {
+    var x = document.getElementById("family");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
 function kidFunction() {
 var x = document.getElementById("kids");
 if (x.style.display === "none") {
