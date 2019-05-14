@@ -88,6 +88,9 @@ nav li a:hover {
     font-style: italic;
     font-weight: bold;
 }
+.foodpics {
+    width: 250px;
+}
 footer ul {
     max-width: 640px;
     margin: 35px auto;
