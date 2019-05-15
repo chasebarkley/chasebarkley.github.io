@@ -36,12 +36,10 @@ p a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 90px 1000px 150px;
 }
-.content,
 .sidebar,
 .footer {
     padding: 1em;
 }
-
 nav ul {
     margin: 0;
     padding: 0;
