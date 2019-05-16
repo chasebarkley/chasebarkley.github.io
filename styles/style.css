@@ -40,6 +40,9 @@ p a:hover {
 .footer {
     padding: 1em;
 }
+.content {
+    padding-top: 10px;
+}
 nav ul {
     margin: 0;
     padding: 0;
