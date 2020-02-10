@@ -12,6 +12,7 @@ p a:hover {
 .footer {
     grid-area: footer;
     background: #e7e7e7;
+    border-radius: 5px;
 }
 .content {
     grid-area: content;
@@ -23,6 +24,7 @@ p a:hover {
     rgba(139,23,0,1),
     rgba(0,0,0,1));
     justify-content: center;
+    border-radius: 5px;
 }
 .container {
     font-size: 1.1em;
@@ -90,11 +92,12 @@ nav li a:hover {
 }
 footer ul {
     max-width: 640px;
-    margin: 35px auto;
-    padding: 0;
+    margin: 0px auto;
+    padding: 0px;
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 footer ul li {
     list-style: none;
@@ -104,6 +107,10 @@ footer ul li a {
     text-decoration: none;
     color: black;
 }
+footer p {
+    font-size: 0.8em;
+}
+
 svg {
     width: 30%;
 }
@@ -235,3 +242,29 @@ footer p {
           text-decoration: none;
       }
 }
+
+
+@media (prefers-color-scheme: dark) {
+	body {
+        background-color: #222831;
+        color: #eeeeee;
+    }
+    .sidebar {
+        background: #393e46;
+    }
+    p a {
+        color: #b55400;
+    }
+    .footer {
+        background: #393e46;
+    }
+    .footer img {
+        filter: invert(0.7);
+    }
+    .footer a {
+        color: #eeeeee;
+    }
+    fw-gc-container {
+        background-color: #393e46;
+    }
+
