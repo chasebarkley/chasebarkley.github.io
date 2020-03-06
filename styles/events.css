@@ -13,6 +13,8 @@ p a:hover {
     grid-area: footer;
     background: #e7e7e7;
     border-radius: 5px;
+    height: 160px;
+    margin-bottom: 8px;
 }
 .content {
     grid-area: content;
@@ -97,7 +99,7 @@ footer ul {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 footer ul li {
     list-style: none;
@@ -178,6 +180,13 @@ footer p {
         rgba(0,0,0,1));
         padding-top: 3em;
         text-transform: uppercase;
+        border-bottom-right-radius: 0px;
+    }
+    .footer {
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        height: 140px;
+        margin-bottom: 0px;
     }
     .hero {
         text-align: left;
@@ -267,4 +276,4 @@ footer p {
     fw-gc-container {
         background-color: #393e46;
     }
-
+}

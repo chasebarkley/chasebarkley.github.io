@@ -7,6 +7,7 @@ body {
   grid-area: footer;
   background: #e7e7e7;
   border-radius: 5px;
+  height: 160px;
 }
 .sidebar {
   grid-area: sidebar;
@@ -63,6 +64,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     width: 100%;
+    line-height: 1.2;
 }
 table.buffet {
   margin: 0 auto;
@@ -226,7 +228,7 @@ table#flavors tr td:nth-child(even) {
   font-size: 20px;
   cursor: pointer;
   width: inherit;
-  margin: 0 auto;
+  margin: 8px auto;
   -webkit-box-shadow: 2px 2px 0px 0px rgba(39,46,39,1);
   -moz-box-shadow: 2px 2px 0px 0px rgba(39,46,39,1);
   box-shadow: 2px 2px 0px 0px rgba(39,46,39,1);
@@ -252,7 +254,7 @@ footer ul {
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 footer ul li {
   list-style: none;
@@ -270,10 +272,11 @@ footer p {
 @media (min-width: 1024px) {
   table { 
     width: 90%;
+    line-height: 1.4;
   }
   .button {
       width: inherit;
-      margin: auto auto auto 5%;
+      margin: 12px auto 12px 5%;
   }
   .container {
       grid-template-areas:
@@ -294,7 +297,13 @@ footer p {
       rgba(0,0,0,1));
       padding-top: 3em;
       text-transform: uppercase;
+      border-bottom-right-radius: 0px;
   }
+  .footer {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 140px;
+}
   .hero {
       text-align: left;
       margin: 2em auto;
@@ -387,5 +396,4 @@ footer p {
     .button:hover {
       background-color: #a54d00;
     }
-  }
 }
