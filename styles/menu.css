@@ -356,6 +356,7 @@ footer p {
       bottom: 10px;
       text-align: center;
       box-shadow: 0 10px 50px #000;
+      z-index: 1;
     }
     p a:hover {
         text-decoration: none;
