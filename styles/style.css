@@ -1,78 +1,13 @@
 body {
     font-family: Montserrat, Arial, sans-serif;
     background-color: white;
+    line-height: 2em;
 }
 
-p a {
-    text-decoration: none;
+a {
     color: #8b1700;
 }
 
-p a:hover {
-    text-decoration: underline;
-}
-.footer {
-    grid-area: footer;
-    background: #e7e7e7;
-    border-radius: 5px;
-    height: 160px;
-    margin-bottom: 8px;
-}
-.content {
-    grid-area: content;
-}
-.sidebar {
-    grid-area: sidebar;
-    background: linear-gradient(to right,
-    rgb(200, 74, 0),
-    rgba(139,23,0,1),
-    rgba(0,0,0,1));
-    justify-content: center;
-    border-radius: 5px;
-}
-.container {
-    font-size: 1.1em;
-    width: 100%;
-    /* height: 100vh; */
-    display:grid;
-    grid-template-areas:
-        "sidebar"
-        "content"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 90px 1000px 150px;
-}
-.sidebar,
-.footer {
-    padding: 1em;
-}
-.content {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-nav li {
-    list-style: none;
-    padding: 1em 0;
-}
-
-nav li a {
-    color: white;
-    font-weight: normal;
-    opacity: 0.6;
-    text-decoration: none;
-    transition: 0.3s;
-}
-nav li a:hover {
-    opacity: 1;
-}
 .hero {
     max-width: 960px;
     margin: 0 auto;
@@ -83,10 +18,6 @@ nav li a:hover {
     width: 200px;
 }
 
-.hero h1 {
-    font-size: 2em;
-    font-weight: 600;
-}
 .hero p {
     font-weight: 300;
 }
@@ -97,90 +28,8 @@ nav li a:hover {
     font-style: italic;
     font-weight: bold;
 }
-.foodpics {
-    width: 250px;
-}
-footer ul {
-    max-width: 640px;
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-footer ul li {
-    list-style: none;
-    align-self: flex-end;
-}
-footer ul li a {
-    text-decoration: none;
-    color: black;
-}
-footer p {
-    font-size: 0.8em;
-}
 
-
-
-#mailchimp input {
-    border: solid 1px;
-    color: #000;
-    font-size: 16px;
-    margin-bottom: 10px;
-    padding: 8px 10px;
-    width: 90%;
-    border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-}
-#mailchimp input.email { background: #fff }
-		#mailchimp input.name { background: #fff}
-		#mailchimp input[type="submit"] {
-            text-decoration: none;
-			background: #8b1700;
-			color: #fff;
-			cursor: pointer;
-            font-size: 15px;
-            font-weight: 700;
-			width: 140px;
-			padding: 0.5em 2em;
-            border-radius: 30px;
-            transition: 0.3s;
-            -webkit-appearance: none;
-}
-#mailchimp input[type="submit"]:hover {
-    box-shadow: 0 2px 10px gray;
-}
 @media (min-width: 1024px) {
-    .container {
-        grid-template-areas:
-            "sidebar content"
-            "sidebar footer";
-        grid-template-columns: 300px 1fr;
-        grid-template-rows: 1fr auto;
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    .sidebar {
-        background: linear-gradient(
-        rgb(200, 74, 0),
-        rgba(139,23,0,1),
-        rgba(0,0,0,1));
-        padding-top: 3em;
-        text-transform: uppercase;
-        border-radius: 5px;
-        border-bottom-right-radius: 0px;
-    }
-    .footer {
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
-        height: 140px;
-        margin-bottom: 0px;
-    }
     .hero {
         text-align: left;
         margin: 2em auto;
@@ -195,57 +44,14 @@ footer p {
     .hero p {
         width: 60%;
     }
-    .footer ul {
-        max-width: 960px; 
-        margin: auto;
-        padding: 0 0;
-    }
     svg {
         width: 20%;
-    }
-
-    .googleCalendar {
-        display: inline-block;
-        position: relative;
-        height: 0;
-        width: 100%;
-        height: 600px;
-    }
-    .googleCalendar iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .googleAgenda {
-        display: none;
     }
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
         background-color: #222831;
-        color: #eeeeee;
-    }
-    .sidebar {
-        background: #393e46;
-    }
-    p a {
-        color: #b55400;
-    }
-    .footer {
-        background: #393e46;
-    }
-    .footer img {
-        filter: invert(0.7);
-    }
-    .footer a {
-        color: #eeeeee;
-    }
-    #mailchimp input[type="submit"]{
-        background: #b55400;
         color: #eeeeee;
     }
 }
